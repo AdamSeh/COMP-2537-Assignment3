@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Memory Match</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Pokemon Memory Game</h1>
+    
+    <div class="controls">
+      <label for="difficulty">Difficulty:</label>
+      <select id="difficulty">
+        <option value="easy">Easy (3 Pairs, 30s)</option>
+        <option value="medium" selected>Medium (6 Pairs, 60s)</option>
+        <option value="hard">Hard (12 Pairs, 120s)</option>
+      </select>
+      
+      <button id="start_btn">Start Game</button>
+      <button id="reset_btn">Reset</button>
+      <button id="theme_toggle">Toggle Theme</button>
+      <button id="powerup_btn">Power Up</button>
+    </div>
+
+    <div class="status_header">
+      <span>Clicks: <span id="clicks_count">0</span></span> | 
+      <span>Pairs Matched: <span id="pairs_matched">0</span></span> | 
+      <span>Pairs Left: <span id="pairs_left">0</span></span> | 
+      <span>Total Pairs: <span id="total_pairs">0</span></span> | 
+      <span>Time Left: <span id="timer_count">0s</span></span>
+    </div>
+    
+    <div id="game_message" class="hidden"></div>
+  </header>
+
+  <div id="game_grid"></div>
+
+</body>
+</html>
