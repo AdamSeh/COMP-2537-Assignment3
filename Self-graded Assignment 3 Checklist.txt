@@ -11,7 +11,7 @@ Student Set: 2A
 [x]  Cards flip when clicked.
 [x]  If the user clicks on the same card twice, do nothing.
 [x]  If the user clicks on a card that is already matched, do nothing.
-[]  If the user clicks on a card while two cards are already flipped, do nothing.
+[x]  If the user clicks on a card while two cards are already flipped, do nothing.
 
 /7 marks
 [x]  Winning Event is implemented. If user clicks on all the cards, display a winning message.
